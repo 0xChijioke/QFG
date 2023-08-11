@@ -1,0 +1,19 @@
+// queries/projectFragments.graphql
+
+fragment ProjectFields on Project {
+  id
+  metaPtr {
+    protocol
+    pointer
+  }
+  owners {
+    id
+    address
+  }
+  accountProjects {
+    account {
+      id
+      address
+    }
+  }
+}

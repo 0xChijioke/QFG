@@ -1,0 +1,12 @@
+// queries/account.graphql
+
+import AccountFields from './accountFragments.graphql';
+
+
+export const GET_ALL_PROJECTS = gql`
+query GetAccount($accountAddress: String!) {
+  account(address: $accountAddress) {
+    ...AccountFields
+  }
+}
+`;

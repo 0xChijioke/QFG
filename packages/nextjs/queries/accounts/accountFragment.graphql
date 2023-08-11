@@ -1,0 +1,12 @@
+
+fragment AccountFields on Account {
+  id
+  address
+  projectsOwned {
+    id
+    metaPtr {
+      protocol
+      pointer
+    }
+  }
+}

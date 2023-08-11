@@ -1,0 +1,13 @@
+// queries/project.graphql
+import { gql } from '@apollo/client';
+
+import ProjectFields from './projectFragments.graphql';
+
+
+export const GET_PROJECT = gql`
+query GetProject($projectId: ID!) {
+  project(id: $projectId) {
+    ...ProjectFields
+  }
+}
+`;

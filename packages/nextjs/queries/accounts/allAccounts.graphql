@@ -1,0 +1,8 @@
+
+import AccountFields from '../projects/accountFragments.graphql';
+
+query GetAllAccounts {
+  accounts {
+    ...AccountFields
+  }
+}
